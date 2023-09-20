@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+</head>
+<style>
+    .submit {
+        color: lightgreen;
+        background-color: darkgreen;
+        border: 0px;
+    }
+    .reset {
+        color: lemonchiffon;
+        background-color: coral;
+        border: 0px;
+    }
+    label,legend {
+        font-size: large;
+    }
+    h1 {
+        text-align: center;
+    }
+</style>
+<body>
+    <h1>El club viejuner</h1>
+    <form action="./FormularioCompletadoConExito/index.html">
+       <fieldset>
+        <legend>Tú:</legend>
+
+        <label for="nombre">Nombre:</label>
+        <input type="texto" id="nombre" name="nombre" placeholder="Introduce tu nombre" autofocus tabindex="1" required><br><br>
+        
+        <label for="apellidos">Apellidos:</label>
+        <input type="texto" id="apellidos" name="apellidos" placeholder="Introduce tus apellidos" tabindex="2" required><br><br>
+        
+        <label for="edad">Edad:</label>
+        <input type="numero" id="edad" name="edad" placeholder="Introduce tu edad" tabindex="3" required><br><br>
+        
+        <label for="sexo">Sexo:</label>
+        <input type="radio" id="sexo-m" name="sexo" value="masculino" tabindex="4"><br><br>
+        
+        <label for="sexo-m">Masculino</label>
+        <input type="radio" id="sexo-f" name="sexo" value="femenino"><br><br>
+        
+        <label for="sexo-f">Femenino</label>
+        <label for="viejuner">Me siento viejuner:</label>
+        <input type="checkbox" id="viejuner" name="viejuner" tabindex="5"><br><br>
+
+        <label for="descripcion">Escribe algo sobre ti:</label>
+        <textarea id="descripcion" name="descripcion" placeholder="Escribe algo sobre ti" tabindex="6"></textarea>
+       </fieldset> 
+       <fieldset>
+        <input class="reset" type="reset" value="Restablecer">
+        <input class="submit" type="submit" value="Enviar">
+       </fieldset>
+    </form>
+    
+    
+    
+    <h1>Los ladronzuelos de bicicletas</h1>
+    <form action="./FormularioCompletadoConExito/index.html">
+        <fieldset>
+            <legend>Datos de la bicicleta:</legend>
+
+            <label for="dia">Día:</label>
+            <input type="fecha" id="dia" name="dia" tabindex="9"><br><br>
+
+            <label for="hora">Hora:</label>
+            <input type="tiempo" id="hora" name="hora" tabindex="10"><br><br>
+
+            <label for="color">Color de la bicicleta:</label>
+            <input type="color" id="color" name="color" tabindex="11"><br><br>
+
+            <label for="precio">Rango de precio:</label>
+            <input type="range" id="precio" name="precio" tabindex="12"><br><br>
+
+            <label for="tipo">Tipo de bicicleta:</label>
+            <select name="tipo" id="tipo" tabindex="13">
+                <option value="Paseo">Paseo</option>
+                <option value="Señorial">Señorial</option>
+                <option value="Anti-plebeyos">Anti-plebeyos</option>
+                <option value="PorEncimaDelHombro">PorEncimaDelHombro</option>
+                <option value="Montaña">Montaña</option>
+                <option value="Gamusinos">Gamusinos</option>
+                <option value="Hueleflores premium">Hueleflores premium</option>
+                <option value="Fango lover">Fango lover</option>
+                <option value="Carreras">Carreras</option>
+                <option value="Metroymedio">Metroymedio</option>
+                <option value="3 de la tarde. Fluorescente edition">3 de la tarde. Fluorescente edition</option>
+                <option value="Grupitors">Grupitors</option>
+            </select><br><br>
+
+            <label for="accesorios">Accesorios:</label>
+            <datalist id="marca">
+                <option value="specialized">
+                <option value="trek">
+                <option value="merida">
+                <option value="scott">
+                <option value="giant">
+                <option value="cube">
+                <option value="lapierre">
+                <option value="orbea">
+                <option value="cannondale">
+                <option value="bmc">
+                <option value="canyon">
+                <option value="look">
+                <option value="protek">
+                <option value="megamo">
+                <option value="pinarello">
+                <option value="bianchi">
+                <option value="bh">
+                <option value="factor">
+                <option value="ghost">
+                <option value="cervélo">
+                <option value="argon">
+            </datalist>
+            <input type="text" id="marca" name="marca" list="marca" tabindex="15"><br><br>
+        </fieldset>
+
+        <input class="reset" type="reset" value="Restablecer">
+        <input class="submit" type="submit" value="Enviar">
+    </form>
+</body>
+</html>
