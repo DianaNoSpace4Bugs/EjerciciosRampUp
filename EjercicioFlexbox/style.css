@@ -1,0 +1,54 @@
+.contact-list{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    background-color: white;
+    padding: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 9px;
+    font-size: larger;
+    font-family: Arial;
+    margin-top: 20px;
+    margin: 0 auto;
+    width: 300px;
+}
+.contact{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-bottom: 1px solid rgb(167, 164, 164);
+    padding-bottom: 20px;
+}
+.contact:last-child {
+    border-bottom: none;
+    padding-bottom: 0px;
+}
+img {
+    width: 90px;
+    height: 90px;
+    border-radius: 110px;
+}
+.info-contact {
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px;
+    background-color: white;
+}
+h3,p {
+    margin: 0px;
+}
+p {
+    margin-top: 8px;
+    color: rgb(167, 164, 164);
+}
+h3 {
+    color: rgb(86, 86, 86);
+}
+body {
+    background-color: rgb(36 34 59);
+}
